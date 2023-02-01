@@ -1,6 +1,7 @@
 import '../styles/reset.scss';
 import '../styles/admin.scss';
 import '../styles/login.scss';
+import '../styles/dodge.scss';
 import api from './lib/api';
 
 window.onload = () => {

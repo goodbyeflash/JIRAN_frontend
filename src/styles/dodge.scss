@@ -1,0 +1,72 @@
+.dodge {
+  section {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    img, embed {
+      display: block;
+    }
+
+    h1 {
+      font-size: 35px;
+      text-align: center;
+      color: #fff;
+
+      span {
+        color: #f8e329;
+      }
+    }
+
+    &.txtSection {
+      padding: 30px 85px;
+      background-color: #416Dfb;
+    }
+  }
+
+  .ranking-table {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+
+    td, th {
+      padding-left: 10px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      text-align: left;
+
+      &:nth-child(1),
+      &:nth-child(4) {
+        padding-left: 0;
+        text-align: center;
+        color: #416Dfb;
+      }
+    }
+
+    thead {
+      background-color: #d8e0fe;
+      color: #416dfb;
+
+      th {
+        height: 50px;
+        border: 1px solid #b7c6ff;
+      }
+    }
+
+    tbody {
+      td {
+        height: 60px;
+        border: 1px solid #d8e0fe;
+        background-color: #fff;
+        color: #4b5563;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5) {
+          background-color: #f2f5ff;
+        }
+      }
+    }
+  }
+}
