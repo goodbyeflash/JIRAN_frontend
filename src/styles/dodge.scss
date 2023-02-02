@@ -1,12 +1,14 @@
-@import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css");
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
 
 .dodge {
   font-family: 'SUIT', sans-serif;
   section {
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: -5px;
 
-    img, embed {
+    img,
+    embed {
       display: block;
     }
 
@@ -23,7 +25,8 @@
 
     &.txtSection {
       padding: 40px 85px;
-      background: url('../images/dodge/jm_owp_event03.png') no-repeat center / 100% 100%;
+      background: url('../images/dodge/jm_owp_event03.png') no-repeat center /
+        100% 100%;
     }
   }
 
@@ -33,7 +36,8 @@
     border-radius: 15px;
     overflow: hidden;
 
-    td, th {
+    td,
+    th {
       padding-left: 10px;
       vertical-align: middle;
       box-sizing: border-box;
@@ -44,7 +48,7 @@
       &:nth-child(4) {
         padding-left: 0;
         text-align: center;
-        color: #416Dfb;
+        color: #416dfb;
       }
     }
 
@@ -75,7 +79,7 @@
     }
   }
 
-  i[class*='icon']{
+  i[class*='icon'] {
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px;

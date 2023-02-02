@@ -11,7 +11,7 @@ import image6 from '../images/dodge/jm_owp_event06.png';
 
 window.onload = () => {
   updateTable();
-  updateDate();
+
   //섹션1 영역
   document.getElementById('section1').getElementsByTagName('img')[0].src =
     image1;
@@ -30,10 +30,10 @@ window.onload = () => {
       .getElementsByTagName('tbody')[0].innerHTML += `<tr>
     <td>${index}</td>
     <td id='name_${index}'></td>
-    <td id='score_${index}'><i class="icon-gold"></i></td>
+    <td id='score_${index}'></td>
     <td>${number}</td>
     <td id='name_${number}'></td>
-    <td id='score_${number}'><i class="icon-bronze"></i></td>
+    <td id='score_${number}'></i></td>
   </tr>`;
     number++;
   }
@@ -60,7 +60,11 @@ function updateTable() {
       if (res.msg == 'OK') {
         res.result.data.forEach((item, index) => {
           document.getElementById(`name_${index + 1}`).innerText = item.name;
-          document.getElementById(`score_${index + 1}`).innerText = item.score;
+          document.getElementById(
+            `score_${index + 1}`
+          ).innerHTML = `<i class="${
+            index < 1 ? 'icon-gold' : index < 10 ? 'icon-silver' : 'icon-bronze'
+          }"></i>${item.score}초`;
         });
         updateDate();
       }
