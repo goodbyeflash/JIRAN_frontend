@@ -1,4 +1,7 @@
+@import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css");
+
 .dodge {
+  font-family: 'SUIT', sans-serif;
   section {
     max-width: 1000px;
     margin: 0 auto;
@@ -8,7 +11,8 @@
     }
 
     h1 {
-      font-size: 35px;
+      font-size: 30px;
+      font-weight: bold;
       text-align: center;
       color: #fff;
 
@@ -18,8 +22,8 @@
     }
 
     &.txtSection {
-      padding: 30px 85px;
-      background-color: #416Dfb;
+      padding: 40px 85px;
+      background: url('../images/dodge/jm_owp_event03.png') no-repeat center / 100% 100%;
     }
   }
 
@@ -34,6 +38,7 @@
       vertical-align: middle;
       box-sizing: border-box;
       text-align: left;
+      font-weight: 600;
 
       &:nth-child(1),
       &:nth-child(4) {
@@ -67,6 +72,30 @@
           background-color: #f2f5ff;
         }
       }
+    }
+  }
+
+  i[class*='icon']{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 16px;
+    height: 24px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    &.icon-gold {
+      background-image: url('../images/dodge/ico_gold.png');
+    }
+
+    &.icon-silver {
+      background-image: url('../images/dodge/ico_silver.png');
+    }
+
+    &.icon-bronze {
+      background-image: url('../images/dodge/ico_bronze.png');
     }
   }
 }

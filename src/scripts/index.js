@@ -11,7 +11,7 @@ import image6 from '../images/dodge/jm_owp_event06.png';
 
 window.onload = () => {
   updateTable();
-
+  updateDate();
   //섹션1 영역
   document.getElementById('section1').getElementsByTagName('img')[0].src =
     image1;
